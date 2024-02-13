@@ -1,0 +1,225 @@
+/* Basic CSS for the navigation bar */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #f0f0f0;
+    background: linear-gradient(45deg, #0c1e1f, #4c4b49);
+    color: #f0f0f0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 74px;
+}
+
+nav h1 {
+    font-size: 2em;
+    padding-left: 10px;
+}
+
+nav div {
+    display: inline-flex;    
+    align-items: center;
+    margin-bottom: 0;
+}
+  
+nav ul {
+    list-style-type: none;
+    /* padding: 0; */
+}
+  
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+  
+nav a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0px 20px;
+}
+
+nav a:hover {
+    color: #818d87;
+    text-decoration: underline;
+ }
+
+.icon {
+    width: 50px;
+    float: left;
+    margin: 10px;
+}
+
+/* Basic CSS for the left navigation bar */
+.nav-left {    
+    width: 50px;
+    background: linear-gradient(#0c1e1f, #4c4b49);    
+    display: flex;
+    height: calc(100% - 74px);
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: flex-end;
+}
+
+.nav-left li {
+    display: block;
+    padding: 30px 0;
+}
+
+.nav-left a {
+    display: block;
+    color: #f0f0f0;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+ }
+
+.nav-left a:hover {
+    background: #818d87;
+    mix-blend-mode: multiply;
+}
+
+.icon-small {
+    width: 30px;    
+}
+  
+/* Basic CSS for the form elements */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #f0f0f0;
+    height: 100vh;
+    /* margin: 20px; */
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+hr {
+    height: .1em;
+    margin: 30px;
+    background-color: #f0f0f0;
+}
+  
+label {
+    display: inline-block;
+    width: 100px;
+}
+  
+input[type="text"], input[type="number"], select {
+    width: 300px;
+    padding: 10px;
+}
+
+textarea[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-family: Arial;
+    resize: none;
+}
+  
+button {
+    padding: 7px 15px;
+    background-color: #02767a;
+    color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #539ca1;
+}
+  
+/* Basic CSS for the report section */
+h2 {
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+  
+#report, #result {
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+#result {  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+#result img {
+    width: 100%;
+}  
+
+.container {
+    height: calc(100vh - 74px);    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-left {
+    width: 40%;
+    height: calc(100vh - 74px);
+    margin: 0 50px 0 0;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(42,86,94, .3) 
+}
+
+.container-right {
+    width: 40%;
+    height: calc(100vh - 74px);
+    margin: 0 50px 0 0;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    background: rgba(42,86,94, .3);
+    overflow: auto;
+}
+
+.title {
+    font-size: 1.75em;
+    padding: 50px;
+    width: 100%
+}
+
+.text {
+    font-size: 1.25em;
+    padding: 50px;
+}
+
+.text-with-background {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(42,86,94);
+    padding: 10px;
+    font-weight: bold;
+}
+
+.warning {
+    padding-top: 40px;
+    text-align: center;
+}
